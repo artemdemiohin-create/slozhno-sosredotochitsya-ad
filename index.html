@@ -1,40 +1,124 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Сложно сосредоточиться</title>
-    <script src="./scripts/script.js"></script>
-  </head>
-  <body class="page">
-    <header class="header decorated-zone">
-      <nav class="header__theme-menu">
-        <ul class="header__theme-menu-list">
-          <li class="header__theme-menu-item">
-            <button
-              class="header__theme-menu-button header__theme-menu-button_type_light"
-            >
-              День
-            </button>
-          </li>
-          <li class="header__theme-menu-item">
-            <button
-              class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto"
-              disabled
-            >
-              Авто
-            </button>
-          </li>
-          <li class="header__theme-menu-item">
-            <button
-              class="header__theme-menu-button header__theme-menu-button_type_dark"
-            >
-              Неон
-            </button>
-          </li>
-        </ul>
-      </nav>
-    </header>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="dark light" />
+  <title>Сложно сосредоточиться</title>
+  <link rel="icon" href="./images/favicon.ico" sizes="any" />
+  <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="./styles/fonts.css" />
+  <link rel="stylesheet" href="./styles/globals.css" />
+  <link rel="stylesheet" href="./styles/variables.css" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="./styles/dark.css" />
+  <link rel="stylesheet" href="./styles/light.css" />
+  <script src="./scripts/script.js" defer></script>
+</head>
+<body class="page">
+  <header class="header decorated-zone">
+    <span class="rec" aria-hidden="true">REC</span>
+    <nav class="header__theme-menu">
+      <ul class="header__theme-menu-list">
+        <li class="header__theme-menu-item">
+          <button class="header__theme-menu-button header__theme-menu-button_type_light">
+            День
+          </button>
+        </li>
+        <li class="header__theme-menu-item">
+          <button class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto" disabled>
+            Авто
+          </button>
+        </li>
+        <li class="header__theme-menu-item">
+          <button class="header__theme-menu-button header__theme-menu-button_type_dark">
+            Неон
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <h1 class="header__title">noise</h1>
+    <p class="header__description title-decor">Сложно сосредоточиться</p>
+  </header>
+
+  <main class="content">
+    <section class="section section--why">
+      <h2 class="section__title">Почему нам так сложно сосредоточиться?</h2>
+      <div class="section__content">
+        <article class="card">
+          <h3 class="card__title title-decor">Многозадачность</h3>
+          <p class="card__text">
+            Исследования показывают, что мозгу требуется время, чтобы переключиться между задачами. Постоянные перерывы снижают продуктивность и ведут к усталости.
+            <a href="#" class="link">Подробнее</a>
+          </p>
+        </article>
+        <article class="card">
+          <h3 class="card__title title-decor">Информационный шум</h3>
+          <p class="card__text">
+            Уведомления, соцсети и поток новостей перегружают внимание. Мы теряем способность к глубокой работе.
+            <a href="#" class="link">Советы</a>
+          </p>
+        </article>
+        <article class="card">
+          <h3 class="card__title title-decor">Недостаток отдыха</h3>
+          <p class="card__text">
+            Без качественного сна и пауз когнитивные способности снижаются. Регулярные перерывы восстанавливают концентрацию.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section--what">
+      <h2 class="section__title">Что делать, когда не можешь ничего делать</h2>
+      <div class="section__content">
+        <div class="subsection">
+          <h3 class="subsection__title title-decor">Практика осознанности</h3>
+          <p class="subsection__text">Медитация и дыхательные упражнения помогают вернуть контроль над вниманием.</p>
+        </div>
+        <div class="subsection">
+          <h3 class="subsection__title title-decor">Техника Pomodoro</h3>
+          <p class="subsection__text">Работайте интервалами по 25 минут с короткими перерывами – это тренирует фокус.</p>
+        </div>
+        <div class="subsection">
+          <h3 class="subsection__title title-decor">Цифровой детокс</h3>
+          <p class="subsection__text">Выделите часы без гаджетов. Используйте приложения-блокировщики отвлекающих сайтов.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--how">
+      <h2 class="section__title">Как правильно концентрироваться</h2>
+      <div class="section__content">
+        <article class="card card--wide">
+          <h3 class="card__title title-decor">Создайте среду для работы</h3>
+          <p class="card__text">Уберите лишние предметы со стола, используйте наушники с шумоподавлением или фоновую музыку без слов.</p>
+        </article>
+        <article class="card card--wide">
+          <h3 class="card__title title-decor">Планируйте день</h3>
+          <p class="card__text">Определите три главные задачи и начните с самой сложной – пока уровень энергии максимален.</p>
+        </article>
+        <article class="card card--wide">
+          <h3 class="card__title title-decor">Используйте якоря внимания</h3>
+          <p class="card__text">Например, перед началом работы делайте одно и то же действие: заварите чай или включите лампу.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <h2 class="gallery__title title-decor">Галерея</h2>
+      <div class="gallery__grid">
+        <img class="gallery__image" src="./images/sunset.png" alt="Закат над горами" loading="lazy" />
+        <img class="gallery__image" src="./images/tape.png" alt="Аудиокассета" loading="lazy" />
+        <img class="gallery__image" src="./images/books.png" alt="Стопка книг" loading="lazy" />
+        <img class="gallery__image" src="./images/street.png" alt="Улица с фиолетовым освещением" loading="lazy" />
+        <img class="gallery__image" src="./images/ice-cream.png" alt="Мороженое на палочке" loading="lazy" />
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer decorated-zone">
+    <h2 class="footer__title">noise</h2>
+  </footer>
+</body>
 </html>
